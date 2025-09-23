@@ -107,6 +107,39 @@ body {
   font-weight: 300;
 }
 
+.expedition-section {
+  margin-top: 4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: 0 2rem;
+}
+
+.expedition-section h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  color: #000;
+  letter-spacing: 0.1em;
+}
+
+.expedition-section p {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.expedition-cta {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #000;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
 .form-section {
   margin-top: 6rem;
   display: flex;

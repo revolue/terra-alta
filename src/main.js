@@ -20,6 +20,12 @@ document.querySelector('#app').innerHTML = `
       </div>
     </div>
     
+    <div class="expedition-section">
+      <h2>EXPEDIÇÃO I - ALTO DO CAPARAÓ</h2>
+      <p>Nossa primeira expedição nos levou ao Alto do Caparaó, uma das regiões mais emblemáticas do café especial brasileiro. Fomos até lá para provar, explorar e conhecer de perto a história dos maiores produtores, com o objetivo de trazer um grão verdadeiramente único para você.</p>
+      <p class="expedition-cta">Faça sua pré-reserva</p>
+    </div>
+    
     <div class="form-section">
       <div class="form-image">
         <img src="${tapjctImage}" alt="TERRA ALTA Project" class="project-image">
