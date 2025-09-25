@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class="text-content">
       <p>Exploramos pequenos sítios, ouvimos histórias reais e vivemos a rotina de quem cultiva café com dedicação, geração após geração.</p>
-      <p>Nossa missão é trazer até você a essência do que encontramos: cafés selecionados com a expertise de um especialista em cafés especiais, a visão de um artista plástico e a captura de um fotógrafo.</p>
+      <p>Nossa missão é trazer até você a essência do que encontramos: cafés selecionados por um especialista em café especiais, a visão de um artista plástico e a captura de um fotógrafo.</p>
       
       <div class="instagram-link">
         <a href="https://www.instagram.com/terra.alta.pjct/" target="_blank" rel="noopener noreferrer">
