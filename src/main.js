@@ -7,8 +7,8 @@ document.querySelector('#app').innerHTML = `
       <img src="/ta_final_black.png" alt="TERRA ALTA" class="logo">
     </div>
     <div class="text-content">
-      <p>Explorar pequenos sítios, escutar histórias reais, e viver a rotina de quem cultiva o café com dedicação, geração após geração.</p>
-      <p>Nossa missão é entregar a essência do que exploramos de forma autêntica, através da visão de um especialista em café especiais, um artista plástico e um fotógrafo.</p>
+      <p>Exploramos pequenos sítios, ouvimos histórias reais e vivemos a rotina de quem cultiva café com dedicação, geração após geração.</p>
+      <p>Nossa missão é trazer até você a essência do que encontramos: cafés selecionados com a expertise de um especialista em cafés especiais, a visão de um artista plástico e a captura de um fotógrafo.</p>
       
       <div class="instagram-link">
         <a href="https://www.instagram.com/terra.alta.pjct/" target="_blank" rel="noopener noreferrer">
@@ -22,8 +22,8 @@ document.querySelector('#app').innerHTML = `
     
     <div class="expedition-section">
       <h2>EXPEDIÇÃO I - ALTO DO CAPARAÓ</h2>
-      <p>Nossa primeira expedição nos levou ao Alto do Caparaó, uma das regiões mais emblemáticas do café especial brasileiro. Fomos até lá para provar, explorar e conhecer de perto a história dos maiores produtores, com o objetivo de trazer um grão verdadeiramente único para você.</p>
-      <p class="expedition-cta">Faça sua pré-reserva</p>
+      <p>Em nossa primeira expedição, fomos ao Alto do Caparaó, uma das regiões mais emblemáticas do café especial brasileiro. Conhecemos os maiores produtores e provamos os grãos mais exclusivos, com o objetivo de entregar a você um café único e de altíssimo nível.</p>
+      <p>Em breve, você poderá provar as escolhas que fizemos com tanto cuidado. A pré-reserva está aberta.</p>
     </div>
     
     <div class="form-section">
