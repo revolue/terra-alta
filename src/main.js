@@ -1,10 +1,30 @@
 import './style.css'
-import tapjctImage from './tapjct.jpg'
+
+// Simple scroll animation for coffee section
+function initScrollEffect() {
+  const coffeeSection = document.querySelector('.coffee-section');
+  const coffeeOverlay = document.querySelector('.coffee-text-overlay');
+  
+  if (!coffeeSection || !coffeeOverlay) return;
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        coffeeOverlay.style.opacity = '1';
+        coffeeOverlay.style.transform = 'translateY(0)';
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+  
+  observer.observe(coffeeSection);
+}
 
 document.querySelector('#app').innerHTML = `
   <div class="container">
     <div class="logo-container">
-      <img src="/ta_final_black.png" alt="TERRA ALTA" class="logo">
+      <img src="/TA.gif" alt="TERRA ALTA" class="logo">
     </div>
     <div class="text-content">
       <p>Exploramos pequenos sítios, ouvimos histórias reais e vivemos a rotina de quem cultiva café com dedicação, geração após geração.</p>
@@ -23,42 +43,23 @@ document.querySelector('#app').innerHTML = `
     <div class="expedition-section">
       <h2>EXPEDIÇÃO I - ALTO DO CAPARAÓ</h2>
       <p>Em nossa primeira expedição, fomos ao Alto do Caparaó, uma das regiões mais emblemáticas do café especial brasileiro. Conhecemos os maiores produtores e provamos os grãos mais exclusivos, com o objetivo de entregar a você um café único e de altíssimo nível.</p>
-      <p>Em breve, você poderá provar as escolhas que fizemos com tanto cuidado. A pré-reserva está aberta.</p>
     </div>
     
-    <div class="form-section">
-      <div class="form-image">
-        <img src="${tapjctImage}" alt="TERRA ALTA Project" class="project-image">
-      </div>
-      <div class="form-container">
-        <h2>Pré-reserva</h2>
-        <form action="https://formspree.io/f/mzzjbgzo" method="POST" class="reservation-form">
-        <div class="form-group">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" required>
+    <div class="coffee-section">
+      <div class="coffee-image-container">
+        <img src="/torra1.jpg" alt="TORRA I" class="coffee-image">
+        <div class="coffee-text-overlay">
+          <h2 class="coffee-title">TORRA I</h2>
+          <div class="coffee-details">
+            <p>Nosso primeiro grão, direto do Alto Caparaó, em 4 torras.</p>
+            <p><strong>Produtor:</strong> Alan Rodrigues Lecerda</p>
+            <p><strong>Região:</strong> Alto Caparaó, Sítio Lacerda</p>
+            <p><strong>Espécie:</strong> 100% Arábica</p>
+            <p><strong>Variedade:</strong> Arara</p>
+            <p><strong>Processo:</strong> Natural em terreiro suspenso</p>
+            <p><strong>Peso:</strong> 250g</p>
+          </div>
         </div>
-        
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="whatsapp">WhatsApp</label>
-          <input type="tel" id="whatsapp" name="whatsapp" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="preferencia">Preferência</label>
-          <select id="preferencia" name="preferencia" required>
-            <option value="">Selecione...</option>
-            <option value="grao">Grão</option>
-            <option value="moido">Moído</option>
-          </select>
-        </div>
-        
-        <button type="submit" class="submit-btn">Enviar Pré-reserva</button>
-        </form>
       </div>
     </div>
     
@@ -70,3 +71,6 @@ document.querySelector('#app').innerHTML = `
     </footer>
   </div>
 `
+
+// Initialize scroll effect after DOM is loaded
+document.addEventListener('DOMContentLoaded', initScrollEffect);
