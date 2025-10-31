@@ -147,7 +147,7 @@ function renderEuqueroPage() {
             </div>
           </div>
           <p class="payment-instruction">
-            Realize o pagamento via PIX e anexe o comprovante no formulário abaixo.
+            Após realizar o pagamento via PIX, preencha o formulário abaixo e envie o comprovante pelo WhatsApp.
           </p>
           <div class="payment-values">
             <p class="payment-value"><strong>R$ 129,00</strong> para retirar</p>
@@ -155,7 +155,7 @@ function renderEuqueroPage() {
           </div>
         </div>
         
-        <form class="euquero-form" id="reservationForm" action="https://formspree.io/f/mzzjbgzo" method="POST" enctype="multipart/form-data">
+        <form class="euquero-form" id="reservationForm" action="https://formspree.io/f/mzzjbgzo" method="POST">
           <h2 class="form-title">FAZER MEU PEDIDO</h2>
           
           <div class="form-group">
@@ -182,13 +182,15 @@ function renderEuqueroPage() {
             </select>
           </div>
           
-          <div class="form-group">
-            <label for="comprovante">Anexar Comprovante PIX:</label>
-            <input type="file" id="comprovante" name="comprovante" accept="image/*,.pdf" required />
-            <span class="file-hint">Aceita imagens (JPG, PNG) ou PDF</span>
+          <div class="whatsapp-notice">
+            <p>📱 <strong>Envie o comprovante PIX pelo WhatsApp:</strong></p>
+            <a href="https://wa.me/5511999999999?text=Olá! Acabei de fazer meu pedido da TORRA II" target="_blank" class="whatsapp-link">
+              📲 Clique aqui para enviar o comprovante
+            </a>
+            <p class="notice-hint">*(Substitua o número pelo seu WhatsApp real)</p>
           </div>
           
-          <button type="submit" class="form-submit">ENVIAR</button>
+          <button type="submit" class="form-submit">ENVIAR PEDIDO</button>
         </form>
       </div>
       
