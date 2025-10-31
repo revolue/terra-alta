@@ -155,7 +155,7 @@ function renderEuqueroPage() {
           </div>
         </div>
         
-        <form class="euquero-form" id="reservationForm" action="https://formspree.io/f/mzzjbgzo" method="POST">
+        <form class="euquero-form" id="reservationForm">
           <h2 class="form-title">FAZER MEU PEDIDO</h2>
           
           <div class="form-group">
@@ -182,15 +182,7 @@ function renderEuqueroPage() {
             </select>
           </div>
           
-          <div class="whatsapp-notice">
-            <p>📱 <strong>Envie o comprovante PIX pelo WhatsApp:</strong></p>
-            <a href="https://wa.me/5511999999999?text=Olá! Acabei de fazer meu pedido da TORRA II" target="_blank" class="whatsapp-link">
-              📲 Clique aqui para enviar o comprovante
-            </a>
-            <p class="notice-hint">*(Substitua o número pelo seu WhatsApp real)</p>
-          </div>
-          
-          <button type="submit" class="form-submit">ENVIAR PEDIDO</button>
+          <button type="submit" class="form-submit">ENVIAR PEDIDO VIA WHATSAPP</button>
         </form>
       </div>
       
@@ -222,6 +214,47 @@ window.copyPixKey = function() {
     console.error('Erro ao copiar:', err);
   });
 }
+
+// Handle form submission to WhatsApp
+function handleFormSubmit(e) {
+  e.preventDefault();
+  
+  // Get form data
+  const nome = document.getElementById('nome').value;
+  const whatsapp = document.getElementById('whatsapp').value;
+  const endereco = document.getElementById('endereco').value;
+  const preferencia = document.getElementById('preferencia').value;
+  
+  // Map preference to readable text
+  const preferenciaTexto = preferencia === 'moido' ? 'Moído' : 'Grãos';
+  
+  // Create WhatsApp message
+  const message = `Olá! Gostaria de fazer um pedido da TORRA II:
+
+Nome: ${nome}
+WhatsApp: ${whatsapp}
+Endereço: ${endereco}
+Preferência: ${preferenciaTexto}
+
+Anexarei o comprovante PIX agora.`;
+  
+  // Encode message for URL
+  const encodedMessage = encodeURIComponent(message);
+  
+  // Create WhatsApp link (SUBSTITUA pelo seu número real!)
+  const whatsappNumber = '5511999999999'; // SUBSTITUA AQUI
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+  
+  // Open WhatsApp
+  window.open(whatsappUrl, '_blank');
+}
+
+// Listen for form submissions
+document.addEventListener('submit', (e) => {
+  if (e.target.id === 'reservationForm') {
+    handleFormSubmit(e);
+  }
+});
 
 // Intercept link clicks for SPA routing
 document.addEventListener('click', (e) => {
