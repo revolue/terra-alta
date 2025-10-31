@@ -241,8 +241,8 @@ Anexarei o comprovante PIX agora.`;
   // Encode message for URL
   const encodedMessage = encodeURIComponent(message);
   
-  // Create WhatsApp link (SUBSTITUA pelo seu número real!)
-  const whatsappNumber = '5511999999999'; // SUBSTITUA AQUI
+  // Create WhatsApp link
+  const whatsappNumber = '5511982786752';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
   
   // Open WhatsApp
