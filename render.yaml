@@ -4,8 +4,7 @@ services:
     env: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
-    routes:
-      - type: rewrite
-        source: /*
+    redirects:
+      - source: /*
         destination: /index.html
-        statusCode: 200
+        status: 200
