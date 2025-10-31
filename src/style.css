@@ -54,16 +54,16 @@ body {
 .torra-ii-button-container {
   width: 100%;
   display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
   animation: fadeInUp 1s ease-out 0.3s both;
 }
 
 .torra-ii-button {
   background: #000;
   color: #fff;
-  padding: 1.2rem 2.5rem;
-  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 0.9rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   text-decoration: none;
@@ -255,8 +255,8 @@ body {
   }
   
   .torra-ii-button {
-    padding: 1rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.85rem;
   }
 }
 
