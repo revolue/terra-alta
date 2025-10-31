@@ -221,6 +221,19 @@ window.copyPixKey = function() {
   });
 }
 
+// Intercept link clicks for SPA routing
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('a');
+  if (link && link.hostname === window.location.hostname && !link.hasAttribute('target')) {
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('/')) {
+      e.preventDefault();
+      window.history.pushState({}, '', href);
+      router();
+    }
+  }
+});
+
 // Initialize router
 router();
 
