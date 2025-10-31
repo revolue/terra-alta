@@ -38,6 +38,9 @@ function renderHomePage() {
       <div class="logo-container">
         <img src="/TA.gif" alt="TERRA ALTA" class="logo">
       </div>
+      <div class="torra-ii-button-container">
+        <a href="/euquero" class="torra-ii-button">TORRA II DISPONÍVEL - COMPRE AQUI</a>
+      </div>
       <div class="text-content">
         <p>Exploramos pequenos sítios, ouvimos histórias reais e vivemos a rotina de quem cultiva café com dedicação, geração após geração.</p>
         <p>Nossa missão é trazer até você a essência do que encontramos: cafés selecionados por um especialista em café especiais, a visão de um artista plástico e a captura de um fotógrafo.</p>
