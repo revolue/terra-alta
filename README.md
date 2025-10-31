@@ -14,13 +14,24 @@ npm install
 npm run dev
 ```
 
-3. Acesse http://localhost:5173
+3. Acesse:
+   - Home: http://localhost:5173/
+   - Eu Quero: http://localhost:5173/euquero
+
+## Páginas Disponíveis
+
+- `/` - Página inicial (Home)
+- `/euquero` - Página de reserva da TORRA II
 
 ## Build para Produção
+
+⚠️ **Importante**: Execute o build apenas quando solicitado para deploy.
 
 ```bash
 npm run build
 ```
+
+O build será gerado na pasta `dist/`.
 
 ## Deploy no Render
 

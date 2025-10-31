@@ -255,3 +255,342 @@ body {
   color: #666;
   margin: 0;
 }
+
+/* Eu Quero Page Styles */
+.euquero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.euquero-logo-container {
+  margin-top: 30px;
+  margin-bottom: 3rem;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.euquero-logo {
+  width: 250px;
+  height: 250px;
+  display: block;
+  object-fit: contain;
+}
+
+.euquero-content {
+  width: 100%;
+  max-width: 900px;
+  text-align: left;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.euquero-info {
+  margin-bottom: 3rem;
+}
+
+.euquero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #000;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.euquero-description {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-weight: 300;
+  text-align: left;
+}
+
+.euquero-details {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #000;
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.euquero-details p {
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.euquero-details strong {
+  font-weight: bold;
+}
+
+.euquero-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.payment-section {
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.payment-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #000;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.payment-description {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.pix-qr {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.pix-key {
+  font-size: 0.9rem;
+  color: #000;
+  margin: 1rem 0 0.5rem 0;
+  font-weight: 300;
+  text-align: left;
+}
+
+.pix-key-value {
+  font-size: 1rem;
+  color: #000;
+  margin: 0.5rem 0 0.5rem 0;
+  font-weight: bold;
+  text-align: left;
+  word-break: break-all;
+  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+}
+
+.pix-copy-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0 0;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  color: #000;
+  flex-shrink: 0;
+}
+
+.copy-btn:hover {
+  opacity: 0.6;
+}
+
+.copy-btn:active {
+  transform: scale(0.9);
+}
+
+.copy-text {
+  font-size: 0.7rem;
+  color: #666;
+  font-weight: 300;
+  text-align: left;
+}
+
+.payment-instruction {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  font-weight: 300;
+  text-align: left;
+}
+
+.payment-values {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.payment-value {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 0.75rem;
+  line-height: 1.8;
+  font-weight: 300;
+  text-align: left;
+}
+
+.payment-value strong {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.euquero-form {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #000;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-size: 1rem;
+  color: #000;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-group input[type="file"] {
+  padding: 0.5rem;
+  background: #f8f8f8;
+  cursor: pointer;
+}
+
+.form-group input[type="file"]:hover {
+  background: #f0f0f0;
+}
+
+.file-hint {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #666;
+  font-style: italic;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 1rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+.form-submit:hover {
+  background: #333;
+}
+
+.form-submit:active {
+  opacity: 0.8;
+}
+
+/* Mobile Layout for Eu Quero Page */
+@media (max-width: 768px) {
+  .euquero-container {
+    padding: 1rem;
+  }
+  
+  .euquero-logo {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .euquero-title {
+    font-size: 1.5rem;
+  }
+  
+  .euquero-description {
+    font-size: 0.9rem;
+  }
+  
+  .euquero-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .gallery-image {
+    height: 150px;
+  }
+  
+  .euquero-form {
+    padding: 2rem 1rem;
+  }
+  
+  .form-title {
+    font-size: 1.3rem;
+  }
+  
+  .pix-qr-image {
+    max-width: 200px;
+  }
+}
+
